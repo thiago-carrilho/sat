@@ -114,7 +114,7 @@ function doSolve(clauses, assignment) {
       for (const variavel of linha) {
         if (variavel < 0) temp[id] = !assignment[Math.abs(variavel) - 1]
         else temp[id] = assignment[variavel - 1]
-        if (temp[id] === true) break;
+        if (temp[id] === true) break;//se já for verdadeiro vai pra proxima linha
       }
     }
     let final = false;
